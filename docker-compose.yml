@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+    postgres:
+     image: postgres:15
+     restart: unless-stopped
+     environment:
+           - POSTGRES_DB=sseproject
+           - POSTGRES_USER=prisma
+           - POSTGRES_PASSWORD=prisma
+     ports:   
+      - '5432:5432'
