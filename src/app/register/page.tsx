@@ -10,7 +10,7 @@ export default function RegisterPage() {
                 </h1>
                 <RegisterForm></RegisterForm>
                 <p className="text-center">
-                    Have an account? <Link href="/login" className="text-indigo-500 hover:underline">Sign in</Link>{' '}
+                    Have an account? <Link href="api/auth/signin" className="text-indigo-500 hover:underline">Sign in</Link>{' '}
                 </p>
             </div>
         </div>

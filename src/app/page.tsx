@@ -13,8 +13,9 @@ export default async function Home() {
   const session = await getServerSession(authOptions)
   return (
     <main style={{display: "flex", justifyContent: "center", alignItems:"center", height:"70vh"}}>
-      <div>
-        <h1>Hello</h1>
+      <div className="w-screen h-screen">
+        //TODO: FIX HOMEPAGE SCREEN - doesnt show Hello message and Username 
+        <h1 className="mb-2 mt-0 text-5xl font-medium leading-tight text-primary pb-5 text-indigo-700"> Hello <pre>{JSON.stringify(session?.user?.name)}</pre></h1>
         <LoginButton />
         <RegisterButton />
         <LogoutButton />
