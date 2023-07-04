@@ -58,13 +58,10 @@ export const RegisterForm = () => {
                     <input required value={password} onChange={(e) => setPassword(e.target.value)} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Enter Password" />
                 </div>
                 {error && <Alert>{error}</Alert>}
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-center">
                     <button className="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
                         Register
                     </button>
-                    <a className="inline-block align-baseline font-bold text-sm text-indigo-500 hover:text-indigo-800" href="#">
-                        Forgot Password?
-                    </a>
                 </div>
             </form>
         </div>
