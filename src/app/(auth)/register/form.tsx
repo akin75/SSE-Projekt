@@ -1,6 +1,6 @@
 'use client'
 
-import { Alert } from "@mantine/core"
+import { Alert } from "@/components/alert/index"
 import { signIn } from "next-auth/react"
 import { useState } from "react"
 
@@ -8,7 +8,7 @@ export const RegisterForm = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [username, setUsername] = useState('')
-    const [error, setError] = useState<Error | null>(null)
+    const [error, setError] = useState<string | null>(null)
 
     const onSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
